@@ -1,0 +1,82 @@
+@back: rgb(8, 0, 0);
+@back2: rgba(255, 0, 0, 0.5);
+@t-azul: blue;
+@t-verde: green;
+@t-vermelho: red;
+@t-amarelo: yellow;
+@aula: rgb(0, 217, 255);
+@comentarioAula3: rgb(195, 0, 255);
+@aula1: rgb(0, 255, 136);
+@aula2: rgb(255, 102, 0);
+@aula3: rgb(0, 119, 255);
+@um:@t-amarelo;
+@dois:@t-verde;
+@tres:brown;
+
+html{
+   background-color: @back;
+}
+#um{
+  color:@t-amarelo;
+}
+#dois{
+  color:@t-verde;
+}
+#tres{
+  color:@tres;
+}
+.t-azul{
+  color:@t-azul;
+}
+.t-verde{
+  color:@t-verde;
+}
+.t-vermelho{
+  color:@t-vermelho;
+}
+.aula{
+  text-decoration: underline;
+}
+#aula-1{
+  color:@aula;
+  background-color: @back2;
+}
+#aula-2{
+  color:@aula;
+  }
+#aula-3{
+  color:@aula;
+}
+.aula-1{
+  color:@aula1;
+}
+.aula-2{
+  color:@aula2;
+}
+.aula-3{
+  color:@aula3;
+}
+.aula-1 {
+  span {
+    color: @t-vermelho;
+  }
+}
+.aula-2 {
+  span {
+    color: @t-verde;
+  }
+}
+.aula-3 
+  span {
+    color: @t-azul;
+  }
+.matrix{
+  background-image: url("./matrix.jpg");
+  /* width: 100%;
+  height: 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: size; */
+  padding-bottom: 250px;
+  padding-top: 250px;
+}
