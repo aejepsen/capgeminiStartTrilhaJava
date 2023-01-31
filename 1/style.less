@@ -13,18 +13,39 @@
 @dois:@t-verde;
 @tres:brown;
 @whidth: 0.20;
-
+.changeBackground(@id){
+  // background-color: if(@back2, @t-amarelo*0.6, @t-verde);
+  & when (@id = "aula-1") {
+    color:@back;
+    background-color: @aula1;
+    width: percentage(@whidth);
+  }
+  & when (@id = "aula-2") {
+    color:@back;
+    background-color: @aula2;
+    width: percentage(@whidth*1.2);
+  }
+  & when (@id = "aula-3") {
+    color:@back;
+    background-color: @aula3;
+    width: percentage(@whidth*1.4);
+  }
+}
+.titulo(@cor, @tamanho){
+  color:@cor;
+  font-size: @tamanho;
+}
 html{
    background-color: @back;
 }
 #um{
-  color:@t-amarelo;
+  .titulo(@t-amarelo, 20px);
 }
 #dois{
-  color:@t-verde;
+  .titulo(@t-verde, 30px);
 }
 #tres{
-  color:@tres;
+  .titulo(@tres, 40px);
 }
 .t-azul{
   color:@t-azul;
@@ -39,15 +60,13 @@ html{
   text-decoration: underline;
 }
 #aula-1{
-  color:@aula;
-  background-color: if(@back2, @t-amarelo, @t-verde);
-  width: percentage(@whidth);
+  .changeBackground("aula-1");
 }
 #aula-2{
-  color:@aula;
+  .changeBackground("aula-2");
   }
 #aula-3{
-  color:@aula;
+  .changeBackground("aula-3");
 }
 .aula-1{
   color:@aula1;
