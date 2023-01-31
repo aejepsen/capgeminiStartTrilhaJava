@@ -1,5 +1,5 @@
 @back: rgb(8, 0, 0);
-@back2: rgba(255, 0, 0, 0.5);
+@back2: true;
 @t-azul: blue;
 @t-verde: green;
 @t-vermelho: red;
@@ -40,7 +40,7 @@ html{
 }
 #aula-1{
   color:@aula;
-  background-color: @back2;
+  background-color: if(@back2, @t-amarelo, @t-verde);
   width: percentage(@whidth);
 }
 #aula-2{
