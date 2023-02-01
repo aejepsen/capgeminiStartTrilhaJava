@@ -1,5 +1,6 @@
 import './App.css';
 import styled from 'styled-components';
+// import efesios_3_16 from "./efesios_3_16.png"
 
 const Titulo = styled.h1`
 color: red;
@@ -16,7 +17,7 @@ function App() {
         <Titulo>Deus é Fiel</Titulo>
         <Versiculo>Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.
 João 3:16</Versiculo>
-      </header>
+     </header>
     </div>
   );
 }
