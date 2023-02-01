@@ -12,9 +12,9 @@
 @um:@t-amarelo;
 @dois:@t-verde;
 @tres:brown;
-@whidth: 0.20;
+@whidth: 0.30;
 .changeBackground(@id){
-  // background-color: if(@back2, @t-amarelo*0.6, @t-verde);
+  // background-color: if(@id='aula-1', @aula1, @t-verde);
   & when (@id = "aula-1") {
     color:@back;
     background-color: @aula1;
@@ -100,4 +100,19 @@ html{
   /* background-size: size; */
   padding-bottom: 250px;
   padding-top: 250px;
+}
+a {
+  color: @back;
+  text-decoration: none;
+  background-color: @aula;
+}
+a:hover {
+  color: @back;
+  text-decoration: none;
+  background-color: @comentarioAula3;
+}
+a:visited {
+  color: @t-vermelho;
+  text-decoration: none;
+  background-color: @aula;
 }
