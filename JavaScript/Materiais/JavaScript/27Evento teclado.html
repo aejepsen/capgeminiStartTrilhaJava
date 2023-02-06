@@ -15,9 +15,7 @@
                 exibe o caractere
                 
                 onKeyPress:Executa a ação e depois
-                exibe o caractere
-                
-                Não tem suporte as seguintes teclas:
+                exibe o caractere. obs. Não tem suporte as seguintes teclas:
                 F1..F12, ALT, CTRL, SHIFT...
             */
             
@@ -25,6 +23,7 @@
                 
                 //Obter o valor do campo texto
                 var campo = document.getElementById("campo").value;
+       
                 
                 //Exibir o conteúdo digitado no campo
                 alert(campo);
@@ -36,7 +35,10 @@
     
     <body> 
         
-        <input type="text" id="campo" onkeyup="exibir()">    
+        <!-- <input type="text" id="campo" onkeyup="exibir()">   -->
+        <input type="text" id="campo" onkeydown="exibir()">    
+        <!-- <input type="text" id="campo" onkeypress="exibir()">     -->
+
                 
     </body>
 </html>
