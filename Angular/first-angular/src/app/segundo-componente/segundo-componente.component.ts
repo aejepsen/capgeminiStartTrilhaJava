@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SegundoComponenteComponent {
 
+  frase = "Somos filhos do Deus Altíssimo !!!"
+  dataNascimento = "1964-12-26"
+
 }
