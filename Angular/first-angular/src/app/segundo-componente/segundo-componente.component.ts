@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./segundo-componente.component.css']
 })
 export class SegundoComponenteComponent {
-
-  frase = "Somos filhos do Deus Altíssimo !!!"
-  dataNascimento = "1964-12-26"
-
+  nome = "Allan Eric Jepsen";
+  frase = "Somos filhos do Deus Altíssimo !!!";
+  dataNascimento = "1964-12-26";
+  urlImagem = "/assets/efesios_3_16.png";
+  
+  mostrarDataNascimento(){
+    alert(`Data Nascimento de ${this.nome} é ${this.dataNascimento}`);
+  }
 }

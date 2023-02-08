@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-primeiro-componente',
-  template: "<h2>Deus é Fiel e Verdadeiro</h2>",
-  styles: ["h2 { color: blue; }"]
+  template: "<h1>Deus é Fiel e Verdadeiro</h1>",
+  styles: ["h1 { color: blue; }"]
 })
 export class PrimeiroComponenteComponent {}

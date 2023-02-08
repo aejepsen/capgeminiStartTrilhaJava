@@ -1,3 +1,6 @@
 <h2>Deus seja Louvado de Eternidade a Eternidade</h2>
 <p>Frase: {{ frase | uppercase }}</p>
+<p>Nome: {{ nome | lowercase }}</p>
 <p>Data Nascimento: {{  dataNascimento | date:"dd/MM/yyyy"}}</p>
+<img src="{{ urlImagem }}" alt="Imagem Armadura de Deus" width="400" height="200"><br>
+<button (click)="mostrarDataNascimento()"  type="button">Mostrar Data Nascimento</button> 
