@@ -1,0 +1,12 @@
+<p>Renderizando Lista Celulares</p>
+<ul class="lista-produtos">
+  <li *ngFor="let celular of celulares">
+    <strong>Nome = {{celular.nome}}</strong>
+    <p>Descrição = {{celular.descricao}}</p>
+    <span [ngClass]="celular.esgotado ? 'esgotado' : 'disponivel'">
+     {{celular.esgotado ? "esgotado" : "disponível"}}
+    </span>
+    <p></p>
+  </li>
+</ul>
+
