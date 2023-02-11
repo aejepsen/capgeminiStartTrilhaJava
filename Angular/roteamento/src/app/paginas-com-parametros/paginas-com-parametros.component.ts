@@ -8,6 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PaginasComParametrosComponent implements OnInit {
   id: number | null = null;
+  nome: string | null = '';
+  idade: number | null = null;
+
   constructor( private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -15,6 +18,9 @@ export class PaginasComParametrosComponent implements OnInit {
       this.id = Number(params.get('id'));
 
   });
+    this.route.queryParamMap.subscribe(params => {
+      this.nome = params.get('nome');
+      this.idade = Number(params.get('idade'));
+    });
 }
-
 }
