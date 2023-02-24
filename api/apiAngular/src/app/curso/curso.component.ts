@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Curso } from './curso';
+import { CursoService } from './curso.service';
 
 @Component({
   selector: 'app-curso',
@@ -11,24 +11,40 @@ export class CursoComponent implements OnInit {
  
   url = "http://localhost:8080/api/php/";
 
-  vetor: Curso[] = [];
+  vetor: Curso[] | undefined;
+
+  curso = new Curso();
 
   constructor(
-    private http: HttpClient,
+    private curso_servico: CursoService
   ) {
   }
 
   ngOnInit() {
+    this.selecionar();
   }
 
   // cadastro
   cadastrar() {
-    alert("Cadastro realizado com sucesso !!!");
+    this.curso_servico.cadastrarCurso(this.curso).subscribe(
+      (res: Curso[]) => {
+        this.vetor = res;
+
+        this.curso.nomeCurso = '';
+        this.curso.valorCurso = 0;
+
+        this.selecionar();
+
+    })
   }
 
   // selecionar
   selecionar() {
-    alert("Selecionado com sucesso !!!");
+    this.curso_servico.obterCursos().subscribe(
+      (res: Curso[]) => {
+        this.vetor = res;
+      }
+    )
   }
 
   //alterar
@@ -37,8 +53,21 @@ export class CursoComponent implements OnInit {
   }
 
   //excluir
-  excluir() {
-    alert("Excluído com sucesso !!!");
+  remover() {
+    this.curso_servico.removerCurso(this.curso).subscribe(
+      (res: Curso[]) => {
+        this.vetor = res;
+
+        this.curso.nomeCurso = '';
+        this.curso.valorCurso = 0;
+        
+      })
+  }
+
+  selecionarCurso(curso: Curso) {
+    this.curso.idCurso = curso.idCurso;
+    this.curso.nomeCurso = curso.nomeCurso;
+    this.curso.valorCurso = curso.valorCurso;
   }
 
 }

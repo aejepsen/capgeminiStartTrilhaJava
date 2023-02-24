@@ -1,9 +1,6 @@
 export class Curso {
+  nomeCurso: string | undefined;
+  valorCurso: number | undefined;
+  idCurso?: number;
 
-  constructor(
-    public nomeCurso: string,
-    public valorCurso: number,
-    public idCurso?:number,
-  ){}
-
-} 
+}
