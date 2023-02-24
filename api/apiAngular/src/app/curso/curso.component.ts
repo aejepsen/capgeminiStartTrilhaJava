@@ -49,7 +49,16 @@ export class CursoComponent implements OnInit {
 
   //alterar
   alterar() {
-    alert("Alterado com sucesso !!!");  
+    this.curso_servico.atualizarCurso(this.curso).subscribe(
+      (res: Curso[]) => {
+        this.vetor = res;
+
+        this.curso.nomeCurso = '';
+        this.curso.valorCurso = 0;
+
+        this.selecionar();
+      }
+    )
   }
 
   //excluir
