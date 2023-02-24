@@ -18,6 +18,6 @@ while($linha = mysqli_fetch_assoc($executar)){
     $indice++;
 }
 
-json_encode(['cursos' => $cursos]);
+json_encode(['cursos'] => $cursos);
 
 ?>
