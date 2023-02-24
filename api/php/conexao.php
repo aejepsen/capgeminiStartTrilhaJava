@@ -7,4 +7,7 @@ $base = "api";
 
 $conexao = mysqli_connect($url, $usuario, $senha, $base);
 
+// caracteres especiais
+mysqli_set_charset($conexao, "utf8");
+
 ?>
