@@ -15,6 +15,7 @@ public class TipoDado {
 		System.out.println("decimalLongo = " + decimalLongo);
 		System.out.println("caracter = " + caracter);
 		System.out.println("cadeiaCaracteres = " + cadeiaCaracteres);
+		
 	}
 
 }
