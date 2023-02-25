@@ -12,10 +12,10 @@ public class Literal {
 		caracter = 'N';
 		certoOuErrado = false;
 		
-		System.out.println(" O valor de número é : " + numero);
-		System.out.println(" O valor de cadeiaCaracteres é : " + cadeiaCaracteres);
-		System.out.println(" O valor de caracter é : " + caracter);
-		System.out.println(" O valor de certoOuErrado é : " + certoOuErrado);
+		System.out.println(" O valor de nÃºmero Ã© : " + numero);
+		System.out.println(" O valor de cadeiaCaracteres Ã© : " + cadeiaCaracteres);
+		System.out.println(" O valor de caracter Ã© : " + caracter);
+		System.out.println(" O valor de certoOuErrado Ã© : " + certoOuErrado);
 
 	}
 

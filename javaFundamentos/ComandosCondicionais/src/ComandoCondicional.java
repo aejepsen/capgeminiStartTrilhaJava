@@ -1,4 +1,3 @@
-
 public class ComandoCondicional {
 
 	public static void main(String[] args) {
@@ -6,33 +5,33 @@ public class ComandoCondicional {
 		
 		int num1 = 10, num2 = 30;
 		if (num1 < num2) {
-			System.out.println("if normal - Número 1 é menor que número 2");
+			System.out.println("if normal - NÃºmero 1 Ã© menor que nÃºmero 2");
 		}
 		
 		if (num1 > num2) {
-			System.out.println("if com else - Número 1 é maior que número 2");			
+			System.out.println("if com else - NÃºmero 1 Ã© maior que nÃºmero 2");			
 		} else {
-			System.out.println("if com else - Número 1 é menor que número 2");
+			System.out.println("if com else - NÃºmero 1 Ã© menor que nÃºmero 2");
 		}
 		
-		// condição composta - situação num1 < num2
+		// condiÃ§Ã£o composta - situaÃ§Ã£o num1 < num2
 		if (num1 > num2) {
-			System.out.println("Condição composta 1 - Número 1 é maior que número 2");	
+			System.out.println("CondiÃ§Ã£o composta 1 - NÃºmero 1 Ã© maior que nÃºmero 2");	
 		} else if (num1 < num2) {
-			System.out.println("Condição composta 1 - Número 1 é menor que número 2");	
+			System.out.println("CondiÃ§Ã£o composta 1 - NÃºmero 1 Ã© menor que nÃºmero 2");	
 		} else {
-			System.out.println("Condição composta 1 - Número 1 é igual ao número 2");
+			System.out.println("CondiÃ§Ã£o composta 1 - NÃºmero 1 Ã© igual ao nÃºmero 2");
 		}
 
-		// condição composta - situação num1 = num2
+		// condiÃ§Ã£o composta - situaÃ§Ã£o num1 = num2
 		num1 = 10;
 		num2 = 10;
 		if (num1 > num2) {
-			System.out.println("Condição composta 2 - Número 1 é maior que número 2");	
+			System.out.println("CondiÃ§Ã£o composta 2 - NÃºmero 1 Ã© maior que nÃºmero 2");	
 		} else if (num1 < num2) {
-			System.out.println("Condição composta 2 - Número 1 é menor que número 2");	
+			System.out.println("CondiÃ§Ã£o composta 2 - NÃºmero 1 Ã© menor que nÃºmero 2");	
 		} else {
-			System.out.println("Condição composta 2 - Número 1 é igual ao número 2");
+			System.out.println("CondiÃ§Ã£o composta 2 - NÃºmero 1 Ã© igual ao nÃºmero 2");
 		}
 
 		// comando condicional SWITCH
@@ -41,19 +40,23 @@ public class ComandoCondicional {
 
 		switch (opcao) {
 			case '1': {
-				System.out.println("Chame programa de Inclusão");
+				System.out.println("Chame programa de InclusÃ£o");
 				break;
 			}
 			case '2': {
-				System.out.println("Chame programa de Alteração");
+				System.out.println("Chame programa de AlteraÃ§Ã£o");
 				break;
 			}
 			case '3': {
-				System.out.println("Chame programa de Exclusão");
+				System.out.println("Chame programa de Exclusï¿½o");
 				break;
 			}
 			case '4': {
 				System.out.println("Chame programa de Consulta");
+				break;
+			}
+			default: {
+				System.out.println("OpÃ§Ã£o invÃ¡lida");
 				break;
 			}
 		}

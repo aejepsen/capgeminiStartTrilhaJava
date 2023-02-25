@@ -11,40 +11,40 @@ public class RelacionaisLogicos {
 		num1 = 10;
 		num2 = 10;
 		if (num1 == num2) {
-			System.out.println("número 1 e número são iguais");
+			System.out.println("nÃºmero 1 e nÃºmero sÃ£o iguais");
 		}
 
 		// testando uma desigualdade
 		num1 = 10;
 		num2 = 30;
 		if (num1 != num2) {
-			System.out.println("número 1 e número são diferentes");
+			System.out.println("nÃºmero 1 e nÃºmero sÃ£o diferentes");
 		}
 		// testando maior
 		num1 = 10;
 		num2 = 5;
 		if (num1 > num2) {
-			System.out.println("número 1 é maior que número 2");	
+			System.out.println("nÃºmero 1 Ã© maior que nÃºmero 2");	
 		} else {
-			System.out.println("número 2 é maior que número 1");
+			System.out.println("nÃºmero 2 Ã© maior que nÃºmero 1");
 		}
 		
-		// operadores lógicos
+		// operadores lï¿½gicos
 		// && = e / AND  || = ou / OR
 		num1 = 10;
 		num2 = 5;
 		int num3 = 20, num4 = 5;
 		if ((num1 > num3) && (num2 == num4)) {
-			System.out.println("Primeira opção satisfeita");
+			System.out.println("Primeira opÃ§Ã£o satisfeita");
 		} else {
-			System.out.println("Segunda opção satisfeita");
+			System.out.println("Segunda opÃ§Ã£o satisfeita");
 		}
 		
 		num2 = 10;
 		if ((num1 > num3) || (num2 == num4)) {
-			System.out.println("Primeira opção satisfeita");
+			System.out.println("Primeira opÃ§Ã£o satisfeita");
 		} else {
-			System.out.println("Segunda opção satisfeita");
+			System.out.println("Segunda opÃ§Ã£o satisfeita");
 		}
 	}
 }
