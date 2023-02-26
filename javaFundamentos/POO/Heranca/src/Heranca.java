@@ -2,12 +2,12 @@
 public class Heranca {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//TODO Auto-generated method stub
 
 			Fisica fis = new Fisica();
-			fis.nome = "JOÂO";
+			fis.nome = "JOï¿½O";
 			fis.cpf  = "11111111";
-			fis.identidade = "1560455";
+			fis.RG = "1560455";
 			fis.situacaoPessoa = "A";
 			
 			Juridica jur = new Juridica();
@@ -16,10 +16,10 @@ public class Heranca {
 			jur.inscEstadual = "45545454";
 			jur.situacaoPessoa = "I";
 			
-			System.out.println("Dados da Pessoa Física");
+			System.out.println("Dados da Pessoa Fï¿½sica");
 			System.out.println(fis.toString());
 			
-			System.out.println("Dados da Pessoa Jurídica");
+			System.out.println("Dados da Pessoa Jurï¿½dica");
 			System.out.println(jur.toString());
 	}
 
