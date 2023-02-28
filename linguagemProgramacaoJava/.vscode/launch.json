@@ -1,0 +1,140 @@
+{
+  // Use o IntelliSense para saber mais sobre os atributos possíveis.
+  // Focalizar para exibir as descrições dos atributos existentes.
+  // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Menu",
+      "request": "launch",
+      "mainClass": "Cadastros.Menu",
+      "projectName": "10-UtilizandoPersisteciaBD"
+    },
+    {
+      "type": "java",
+      "name": "Launch MenuPrincipal",
+      "request": "launch",
+      "mainClass": "Cadastros.MenuPrincipal",
+      "projectName": "10-UtilizandoPersisteciaBD"
+    },
+    {
+      "type": "java",
+      "name": "Launch TesteAnnotation",
+      "request": "launch",
+      "mainClass": "AulaAnnotation.TesteAnnotation",
+      "projectName": "Annotations"
+    },
+    {
+      "type": "java",
+      "name": "Launch ArrayListCarros",
+      "request": "launch",
+      "mainClass": "ArrayListCarros",
+      "projectName": "ArrayListPratico"
+    },
+    {
+      "type": "java",
+      "name": "Launch Matrizes",
+      "request": "launch",
+      "mainClass": "Matrizes",
+      "projectName": "ArraysMultidimensionais"
+    },
+    {
+      "type": "java",
+      "name": "Launch Demonstracao",
+      "request": "launch",
+      "mainClass": "Demonstracao",
+      "projectName": "ClassesWrapper"
+    },
+    {
+      "type": "java",
+      "name": "Launch ComandoForEach",
+      "request": "launch",
+      "mainClass": "ComandoForEach",
+      "projectName": "ComandoForEach"
+    },
+    {
+      "type": "java",
+      "name": "Launch Construtor",
+      "request": "launch",
+      "mainClass": "Construtores.Construtor",
+      "projectName": "Construtores-Enumerador-Interfaces"
+    },
+    {
+      "type": "java",
+      "name": "Launch InterfaceUso",
+      "request": "launch",
+      "mainClass": "Interfaces.InterfaceUso",
+      "projectName": "Construtores-Enumerador-Interfaces"
+    },
+    {
+      "type": "java",
+      "name": "Launch ClasseCalendar",
+      "request": "launch",
+      "mainClass": "ClasseCalendar",
+      "projectName": "DatasTratamento"
+    },
+    {
+      "type": "java",
+      "name": "Launch ConversaoDatas",
+      "request": "launch",
+      "mainClass": "ConversaoDatas",
+      "projectName": "DatasTratamento"
+    },
+    {
+      "type": "java",
+      "name": "Launch DatasUsandoSDF",
+      "request": "launch",
+      "mainClass": "DatasUsandoSDF",
+      "projectName": "DatasTratamento"
+    },
+    {
+      "type": "java",
+      "name": "Launch Declaracoes",
+      "request": "launch",
+      "mainClass": "Declaracoes",
+      "projectName": "DeclaracaoArrays"
+    },
+    {
+      "type": "java",
+      "name": "Launch Principal",
+      "request": "launch",
+      "mainClass": "Embarque.Principal",
+      "projectName": "GenericsCourse"
+    },
+    {
+      "type": "java",
+      "name": "Launch PrincipalComGenerics",
+      "request": "launch",
+      "mainClass": "Embarque.PrincipalComGenerics",
+      "projectName": "GenericsCourse"
+    },
+    {
+      "type": "java",
+      "name": "Launch LinkedListCarros",
+      "request": "launch",
+      "mainClass": "LinkedListCarros",
+      "projectName": "LinkedListPratico"
+    },
+    {
+      "type": "java",
+      "name": "Launch ThreadsTeste",
+      "request": "launch",
+      "mainClass": "PackageThreads.ThreadsTeste",
+      "projectName": "ThreadsJava"
+    },
+    {
+      "type": "java",
+      "name": "Launch TrabalhandoArray",
+      "request": "launch",
+      "mainClass": "TrabalhandoArray.TrabalhandoArray",
+      "projectName": "TrabalhandoArray"
+    }
+  ]
+}
