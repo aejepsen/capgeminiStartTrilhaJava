@@ -7,13 +7,21 @@ public class TrabalhandoArray {
 	public static void main(String[] args) {
 		//declarando o array
 		String [] paises = new String[5];
+
+		// inserindo dados no array
+		for( int i = 0; i < paises.length; i++) {
+			paises[i] = JOptionPane.showInputDialog("Informe o nome do paÃ­s");
+		};
 		 
 		// inicializando o array
-		paises[0] = "Brasil";
-		paises[1] = "Alemanha";
-		paises[2] = "Itália";
-		paises[3] = "Áustria";
-		paises[4] = "Polônia";
+		// paises[0] = "Brasil";
+		// paises[1] = "Alemanha";
+		// paises[2] = "ItÃ¡lia";
+		// paises[3] = "Ãustria";
+		// paises[4] = "PolÃ´nia";
+
+		// declarando e inicializando o array
+		// String[] paises = { "Brasil", "Alemanha", "ItÃ¡lia", "Ãustria", "PolÃ´nia" };
 
 		for (String lista: paises) {
 			System.out.println(lista);
@@ -22,16 +30,19 @@ public class TrabalhandoArray {
 		int [] numeros = new int [10];
 		
 		for (int i = 0; i < numeros.length; i++) {
-			numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe um número"));
+			numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe um nÃºmero"));
 		}
 		// listando os valores do array com um ForEach
-		System.out.println("Após a entrada de dados");
+		System.out.println("ApÃ³s a entrada de dados");
+
+		// for each
+
 		for (int listaNumeros : numeros) {
 			System.out.print(listaNumeros + " ");
 		}
 		// calculando os valores para armazenar no array
 		numeros[8] = numeros[7] + 4;
-		System.out.println("\nApós a alteração do valor na posição 8");
+		System.out.println("\nApÃ³s a alteraÃ§Ã£o do valor na posiÃ§Ã£o 8");
 		// listando os valores do array com um ForEach
 		for (int listaNumeros : numeros) {
 			System.out.print(listaNumeros + " ");
