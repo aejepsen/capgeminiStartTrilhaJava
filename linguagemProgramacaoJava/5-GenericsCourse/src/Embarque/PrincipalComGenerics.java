@@ -19,6 +19,7 @@ public class PrincipalComGenerics {
 		
 		// adicionando voos
 		for (int i = 0; i < nrAeronaves; i++) {
+			System.out.println("Informe o " + (i+1) + "º voo:");
 			Integer nrVoo = sc.nextInt();
 			air.addVoo(nrVoo);
 		}
