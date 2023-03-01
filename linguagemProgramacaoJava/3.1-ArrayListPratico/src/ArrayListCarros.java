@@ -14,6 +14,7 @@ public class ArrayListCarros {
         carros.add("MERCEDES");
         carros.add("FUSCA");
         carros.add("VECTRA");
+        carros.add("SANDERO");
         // mostra array
         System.out.println(carros);
         
@@ -38,13 +39,13 @@ public class ArrayListCarros {
         System.out.println(carros);
         */
         
-        // verificar se o array est· vazio
+        // verificar se o array est√° vazio
         if (carros.isEmpty()) {
-            System.out.println("O vetor est· vazio");
+            System.out.println("O vetor est√° vazio");
         }
         
         if (carros.contains("BMW")) {
-            // substituindo quando n„o se sabe a posiÁ„o
+            // substituindo quando n√£o se sabe a posi√ß√£o
             for (int i = 0; i < carros.size(); i++) {
                 if ("BMW".equals(carros.get(i))) {
                     carros.set(i, "BUGATTI");
