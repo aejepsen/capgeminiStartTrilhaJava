@@ -8,6 +8,15 @@ public class LinkedListCarros {
 	    cars.add("Volvo");
 	    cars.add("BMW");
 	    cars.add("Ford");
+
+			/*
+			 * addFirst() - adiciona um elemento no início da lista
+			 * addLast() - adiciona um elemento no final da lista
+			 * getFirst() - retorna o primeiro elemento da lista
+			 * getLast() - retorna o último elemento da lista
+			 * removeFirst() - remove o primeiro elemento da lista
+			 * removeLast() - remove o último elemento da list
+			 */
 	    
 	    // incluindo Mazda no inicio
 	    cars.addFirst("Mazda");
