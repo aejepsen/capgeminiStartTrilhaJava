@@ -15,7 +15,7 @@ public class LinkedListCarros {
 			 * getFirst() - retorna o primeiro elemento da lista
 			 * getLast() - retorna o último elemento da lista
 			 * removeFirst() - remove o primeiro elemento da lista
-			 * removeLast() - remove o último elemento da list
+			 * removeLast() - remove o último elemento da lista
 			 */
 	    
 	    // incluindo Mazda no inicio
@@ -35,6 +35,9 @@ public class LinkedListCarros {
 	    // pega o primeiro
 	    System.out.println(cars.getFirst());
 	    System.out.println(cars);
+
+			cars.set(0, "Land Rover");
+			System.out.println(cars);
 	    }
 	    
 }
