@@ -4,9 +4,9 @@ import java.util.Scanner;
 import Controle.Aeronaves;
 
 /*
- * Informar a quantidade de aeronaves no p·tio, o nr dos vÙos por ordem de chegada. 
- * A ordem de decolagem È FIFO, o primeiro que entra È o primeiro que sai. 
- * Mostrar qual o primeiro vÙo · decolar
+ * Informar a quantidade de aeronaves no p√°tio, o nr dos v√¥os por ordem de chegada. 
+ * A ordem de decolagem √© FIFO, o primeiro que entra √© o primeiro que sai. 
+ * Mostrar qual o primeiro v√¥o √© decolar
  */
 public class Principal {
 
@@ -19,6 +19,7 @@ public class Principal {
 		
 		// adicionando voos
 		for (int i = 0; i < nrAeronaves; i++) {
+			System.out.println("Informe o " + (i+1) + "¬∫ voo:");
 			int nrVoo = sc.nextInt();
 			air.addVoo(nrVoo);	
 		}

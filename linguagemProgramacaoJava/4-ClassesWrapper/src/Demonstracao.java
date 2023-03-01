@@ -1,4 +1,4 @@
-import java.util.Locale;
+// import java.util.Locale;
 
 public class Demonstracao {
 
@@ -30,6 +30,10 @@ public class Demonstracao {
 		
 			Double doubWrapped = 3.14159;
 			System.out.println(doubWrapped.getClass());
+
+			int numero = Integer.parseInt("123");
+			System.out.println(numero);
+
 	}
 
 }

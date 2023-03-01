@@ -1,13 +1,13 @@
 package Embarque;
 import java.util.Scanner;
 
-import Controle.Aeronaves;
+// import Controle.Aeronaves;
 import Controle.AeronavesComGenerics;
 
 /*
- * Informar a quantidade de aeronaves no pátio, o nr dos vôos por ordem de chegada. 
- * A ordem de decolagem é FIFO, o primeiro que entra é o primeiro que sai. 
- * Mostrar qual o primeiro vôo á decolar
+ * Informar a quantidade de aeronaves no pï¿½tio, o nr dos vï¿½os por ordem de chegada. 
+ * A ordem de decolagem ï¿½ FIFO, o primeiro que entra ï¿½ o primeiro que sai. 
+ * Mostrar qual o primeiro vï¿½o ï¿½ decolar
  */
 public class PrincipalComGenerics {
 
@@ -24,7 +24,7 @@ public class PrincipalComGenerics {
 		}
 		air.primeiroVoo();
 		Integer x = (Integer) air.primeiroVoo();
-		System.out.println("O primeiro a decolar é o voo :" + x);
+		System.out.println("O primeiro a decolar ï¿½ o voo :" + x);
 		sc.close();
 	}
 }
