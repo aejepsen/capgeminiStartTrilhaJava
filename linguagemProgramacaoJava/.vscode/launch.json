@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TesteDeprecated",
+      "request": "launch",
+      "mainClass": "AulaAnnotation.TesteDeprecated",
+      "projectName": "Annotations"
+    },
+    {
+      "type": "java",
       "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${file}"
