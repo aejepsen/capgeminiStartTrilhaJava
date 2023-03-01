@@ -44,7 +44,7 @@ public class ArrayListCarros {
             System.out.println("O vetor está vazio");
         }
         
-        if (carros.contains("BMW")) {
+        if (carros.contains("BMW.")) {
             // substituindo quando não se sabe a posição
             for (int i = 0; i < carros.size(); i++) {
                 if ("BMW".equals(carros.get(i))) {
@@ -52,6 +52,8 @@ public class ArrayListCarros {
                     break;
                 }
             }
+        } else {
+            System.out.println("Não existe o veículo pesquisado no array");
         }
         // mostra array
         System.out.println(carros);
