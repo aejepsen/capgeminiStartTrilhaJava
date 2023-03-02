@@ -1,7 +1,7 @@
 package Cadastros;
 
 import java.sql.CallableStatement;
-import java.sql.Connection;
+import java.sql.Connection;																																																																																																																																																																																																																																																																																																																																					
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,7 +17,7 @@ public class Dao {
 	public void open() throws Exception{
 	    String url = "jdbc:postgresql://localhost:5432/cadastros";
 	    String user = "postgres";
-	    String password = "admin";
+	    String password = "password";
 	    try {
 	        Class.forName("org.postgresql.Driver");
 	        con = DriverManager.getConnection(url, user, password);      
@@ -29,4 +29,4 @@ public class Dao {
 	public void close() throws Exception{		
 		con.close();
 	}
-}
+}																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
