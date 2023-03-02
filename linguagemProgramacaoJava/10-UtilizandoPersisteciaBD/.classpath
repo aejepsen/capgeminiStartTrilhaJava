@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/devs2blu/devs2blu/10-UtilizandoPersisteciaBD/postgresql-42.3.1.jar"/>
+	<classpathentry kind="src" path=".settings"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
