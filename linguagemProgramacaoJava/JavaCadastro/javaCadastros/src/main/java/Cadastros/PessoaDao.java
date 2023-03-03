@@ -42,7 +42,7 @@ public class PessoaDao extends Dao {
     // retornando um objeto
     public Pessoa consultarPessoaIndividual(int cod) throws Exception {
         open();
-        stmt = con.prepareStatement("select * from pessoas where idPessoa = ? ");
+        stmt = con.prepareStatement("select * from pessoa where idpessoa = ? ");
         stmt.setInt(1, cod);
         try {
             rs = stmt.executeQuery();
@@ -59,8 +59,8 @@ public class PessoaDao extends Dao {
         if (rs != null) {
             if (rs.next()) {
                 p = new Pessoa();
-                p.setIdPessoa(rs.getInt("idPessoa"));
-                p.setNomePessoa(rs.getString("nomePessoa"));
+                p.setIdPessoa(rs.getInt("idpessoa"));
+                p.setNomePessoa(rs.getString("nomepessoa"));
                 p.setEmail(rs.getString("email"));
             }
         }

@@ -8,16 +8,17 @@ public class Menu {
         try {
             // Incluir uma pessoa
 
-			Pessoa p1 = new Pessoa(1,"jose", "jose@gmail.com");
-			Pessoa p2 = new Pessoa(2,"joao", "joao@gmail.com");
-			pd.incluirPessoa(p1);
-			pd.incluirPessoa(p2);
+//			Pessoa p1 = new Pessoa(1,"jose", "jose@gmail.com");
+//			Pessoa p2 = new Pessoa(2,"joao", "joao@gmail.com");
+//			pd.incluirPessoa(p1);
+//			pd.incluirPessoa(p2);
 
-
+//                Pessoa pes = pd.consultarPessoaIndividual(1);
+//                System.out.println(pes);
             // Alterar uma pessoa
             // - Alterar a informação desejada usando o set(Classe encapsulada)
             try {
-                Pessoa pes = pd.consultarPessoaIndividual(3);
+                Pessoa pes = pd.consultarPessoaIndividual(1);
 
                 // se o resultado da consulta a pessoa retornar null é porque não encontrou
                 // a pessoa
