@@ -55,8 +55,32 @@
                             maxlength="50"
                         >                        
                     </div>
-                </fildset><br>               
+                </fildset><br>
+                <div>
+                    <div class="form-group col-md3 h-10">
+                        <input type="submit" value="Cadastrar" class="btn btn-primary" onclick="enviaForm()" />
+                    </div>
+                    <div class="form-group col-md3 h-10">
+                        <input type="reset" value="Cancelar" class="btn btn-danger"/>
+                    </div>                    
+                </div>
             </form>           
         </div>
+        <script>
+            function enviaForm(){
+                document.forms[0].submit();    
+            }
+        </script>
+        <script>
+            function cancela() {
+                document.getElementsByClassName("msg-popup2")[0].style.display = "none";
+                
+            }
+            function mostraqrExclusao(pessoa){
+                document.getElementsByClassName("msg-popup2")[0].style.display = "block";
+                var link = document.getElementById("exclui");
+                link.ref = "excluirpessoa.jsp?idpessoa=" + pessoa;
+            }
+        </script>
     </body>
 </html>
