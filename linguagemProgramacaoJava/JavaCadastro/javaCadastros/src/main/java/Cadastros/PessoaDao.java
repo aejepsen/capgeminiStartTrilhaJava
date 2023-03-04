@@ -18,15 +18,24 @@ public class PessoaDao extends Dao {
     }
 
 
-    public void alterarPessoa(Pessoa p) throws Exception {
+    public boolean alterarPessoa(Pessoa p) throws Exception {
         open();
         stmt = con.prepareStatement("update Pessoa set nomepessoa = ?, email = ? where idPessoa = ?");
-        stmt.setString(1, p.getNomePessoa());
-        stmt.setString(2, p.getEmail());
-        stmt.setInt(3, p.getIdPessoa());
-        stmt.execute();
+        try{
+
+            stmt.setString(1, p.getNomePessoa());
+            stmt.setString(2, p.getEmail());
+            stmt.setInt(3, p.getIdPessoa());
+            stmt.execute();
+        }catch (SQLException ex) {
+            System.out.println("Erro: " + ex.getMessage() + stmt.toString());
+            stmt.close();
+            close();
+            return false;
+        }
         stmt.close();
         close();
+        return true;
     }
 
     public void excluirPessoa(Pessoa p) throws Exception {
