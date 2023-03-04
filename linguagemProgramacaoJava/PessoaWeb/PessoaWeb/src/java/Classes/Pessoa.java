@@ -6,7 +6,7 @@ package Classes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.ResultSet;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,8 +46,6 @@ public class Pessoa {
                sql += " email = ? ";
                sql += " where idpessoa = ? ";
         
-//        open();
-//        stmt = con.prepareStatement("update Pessoa set nomepessoa = ?, email = ? where idPessoa = ?");
         try{
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, this.nomePessoa);
@@ -62,13 +60,6 @@ public class Pessoa {
     }
 
     public boolean excluirPessoa(Pessoa p) {
-
-//        open();
-//        stmt = con.prepareStatement("delete from Pessoa where idPessoa = ?");
-//        stmt.setInt(1, p.getIdPessoa());
-//        stmt.execute();
-//        stmt.close();
-//        close();
 
         Connection con = Conexao.conectar();
         String sql = "delete from pessoa ";
@@ -85,12 +76,7 @@ public class Pessoa {
         return true;
     }
     
-    
-    // retornando um objeto
     public Pessoa consultarPessoaIndividual(int cod) {
-//        open();
-//        stmt = con.prepareStatement("select * from pessoa where idpessoa = ? ");
-//        stmt.setInt(1, cod);
 
         Connection con = Conexao.conectar();
 

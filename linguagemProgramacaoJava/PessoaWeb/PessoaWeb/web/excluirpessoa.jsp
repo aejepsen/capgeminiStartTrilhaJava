@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page  import="Classe.Pessoa" %>
+<%@page  import="Classes.Pessoa" %>
 
 <% 
     int idpessoa = Integer.parseInt(request.getParameter("idpessoa"));
